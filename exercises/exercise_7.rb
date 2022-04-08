@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "What is the store name?"
+@store_name = gets
+
+newStore = Store.create(name: @store_name)
+
+errors = newStore.errors
+puts errors.messages
